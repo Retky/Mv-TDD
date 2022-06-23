@@ -30,4 +30,22 @@ describe Solver do
       expect(Solver.reverse('hello world')).to eq('dlrow olleh')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'returns "Fizz" for multiples of 3' do
+      expect(Solver.fizzbuzz(3)).to eq('Fizz')
+    end
+
+    it 'returns "Buzz" for multiples of 5' do
+      expect(Solver.fizzbuzz(5)).to eq('Buzz')
+    end
+
+    it 'returns "FizzBuzz" for multiples of 3 and 5' do
+      expect(Solver.fizzbuzz(15)).to eq('FizzBuzz')
+    end
+
+    it 'returns the number coherced to string for non-multiples of 3 or 5' do
+      expect(Solver.fizzbuzz(1)).to eq('1')
+    end
+  end
 end

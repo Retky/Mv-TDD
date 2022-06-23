@@ -4,6 +4,10 @@
 #  Solver.factorial(5) => 120
 #    @params [Integer] number
 #    @return [Integer]
+#  Solver.reverse('hello') => 'olleh'
+#    @params [String] string
+#    @return [String]
+
 class Solver
   def self.factorial(num)
     raise ArgumentError if num.negative?
