@@ -14,5 +14,5 @@ class Solver
 
   def self.reverse(str)
     str.reverse
-  end
+  end 
 end
