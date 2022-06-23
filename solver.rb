@@ -11,4 +11,8 @@ class Solver
 
     num * factorial(num - 1)
   end
+
+  def self.reverse(str)
+    str.reverse
+  end
 end
